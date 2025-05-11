@@ -1,16 +1,19 @@
 //Composite class
+import java.util.ArrayList;
+import java.util.List;
 public class College implements OrganizationalUnit
 {
   private String name;
   private List<OrganizationalUnit> departments = new ArrayList<>();
 
   //Constructor
-  public College(Sttring name)
+  public College(String name)
   {
     this.name = name;
+    this.departments = new ArrayList<>(); // Initialize the list of departments.
   }
 
-  public void addCollege (OrganizationalUnit department)
+  public void addDepartment (OrganizationalUnit department)
   {
     departments.add(department);
   }
@@ -39,7 +42,7 @@ public class College implements OrganizationalUnit
   @Override 
   public double getBudget() 
   {
-    double budget - 0;
+    double budget = 0;
     for (OrganizationalUnit department: departments)
     {
       budget += department.getBudget();
