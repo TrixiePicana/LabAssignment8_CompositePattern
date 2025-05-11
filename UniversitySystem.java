@@ -14,27 +14,28 @@ public class UniversitySystem
 
     //Create departments
     College csDepartment = new College("Department of Computer Science");
-    csDepartment.addCollege(t1);
-    csDepartment.addCollege(s1);
+    csDepartment.addDepartment(t1);
+    csDepartment.addDepartment(t3);
+    csDepartment.addDepartment(s1);
 
     College itDepartment = new College("Department of Information Technology");
-    itDepartment.addCollege(t2);
-    itDepartment.addCollege(s4);
+    itDepartment.addDepartment(t2);
+    itDepartment.addDepartment(s4);
     
     College isDepartment = new College("Department of Information Systems");
-    isDepartment.addCollege(t4); 
-    isDepartment.addCollege(s2);
-    isDepartment.addCollege(s3);
+    isDepartment.addDepartment(t4); 
+    isDepartment.addDepartment(s2);
+    isDepartment.addDepartment(s3);
     
     //Create College
-    College CollegeofComputerStudies = new College(College of Computer Studies); 
-    CollegeofComputerStudies.addCollege(csDepartment);
-    CollegeofComputerStudies.addCollege(itDepartment);
-    CollegeofComputerStudies.addCollege(isDepartment);
-    CollegeofComputerStudies.addCollege(s1);
-    CollegeofComputerStudies.addCollege(s2);
-    CollegeofComputerStudies.addCollege(s3);
-    CollegeofComputerStudies.addCollege(s4);
+    College CollegeofComputerStudies = new College("College of Computer Studies"); 
+    CollegeofComputerStudies.addDepartment(csDepartment);
+    CollegeofComputerStudies.addDepartment(itDepartment);
+    CollegeofComputerStudies.addDepartment(isDepartment);
+    CollegeofComputerStudies.addDepartment(s1);
+    CollegeofComputerStudies.addDepartment(s2);
+    CollegeofComputerStudies.addDepartment(s3);
+    CollegeofComputerStudies.addDepartment(s4);
 
     // Display details
     CollegeofComputerStudies.displayDetails("");
