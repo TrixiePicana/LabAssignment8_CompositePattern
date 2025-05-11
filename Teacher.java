@@ -3,7 +3,7 @@ public class Teacher implements OrganizationalUnit
 {
   private String name;
   private String subject; 
-  private doule salary; 
+  private double salary; 
 
   //Constructor
   public Teacher (String name,String subject, double salary)
